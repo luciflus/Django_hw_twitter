@@ -1,0 +1,37 @@
+[
+{
+    "model": "sessions.session",
+    "pk": "rc8691ygluubq4h86g62ptkhpca9ztax",
+    "fields": {
+        "session_data": ".eJxVjDsOwyAQRO9CHSE-ZsEp0_sMaFkgOIlAMnYV5e6xJRdJM8W8N_NmHre1-K2nxc-RXZlkl98uID1TPUB8YL03Tq2uyxz4ofCTdj61mF630_07KNjLvgaZySgZEIRBkQxIbUdSKABUAhCDs4OGMUWtLKERKDFDdrSnlpoc-3wBwCg3Mw:1pIMjT:Orxycip8F6ucZQIKPHnLyiJwfXrDM9sUfdVYogAKWQM",
+        "expire_date": "2023-02-02T04:40:59.668Z"
+    }
+},
+{
+    "model": "accounts.user",
+    "pk": 1,
+    "fields": {
+        "password": "pbkdf2_sha256$260000$Psgz4elUByO2s1ZgDSw0yE$VtbDKfSUwQ5qoTmilcW/jc8TeMpzGOh1w2WtK0sEUUE=",
+        "last_login": "2023-01-19T04:40:59.659Z",
+        "is_superuser": true,
+        "username": "superadmin",
+        "first_name": "",
+        "last_name": "",
+        "email": "",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2023-01-19T04:40:34.925Z",
+        "patronymic": "",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "posts.statustype",
+    "pk": 1,
+    "fields": {
+        "slug": "like",
+        "name": "Like"
+    }
+}
+]

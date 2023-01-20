@@ -1,0 +1,17 @@
+docker-compose exec web python manage.py dumpdata --exclude=auth --exclude=contenttypes
+docker-compose exec web python manage.py dumpdata -o my_data.json --exclude=auth --exclude=contenttypes --indent=4
+docker-compose exec web python manage.py loaddata my_data.json #восстановить данные
+
+
+docker-compose stop
+docker-compose up -d ### в фоновом режиме
+
+docker-compose up -d --build
+
+docker-compose down -v ##removing volume
+docker-compose -f docker-compose.prod.yml down -v
+
+docker-compose -f docker-compose.prod.yml up -d --build ##запускаем прод файл
+docker-compose -f docker-compose.prod.yml exec web python manage.py migrate
+docker-compose -f docker-compose.prod.yml logs -f
+
